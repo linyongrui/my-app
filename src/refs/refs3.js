@@ -10,12 +10,7 @@ class MyRefs extends Component {
 
   changeWeather = () => {
     const { isHot } = this.state
-    this.setState({ isHot: !isHot })
-  }
-
-  saveInput = (c) => {
-    this.text1 = c;
-    console.log('@', c)
+    this.setState({isHot: !isHot})
   }
 
   render() {
@@ -23,7 +18,7 @@ class MyRefs extends Component {
     return (
       <div>
         <h2>今天天气很{isHot ? '炎热' : '凉爽'}</h2>
-        <input ref={this.saveInput} type="text" placeholder="点击按钮提示数据" /> &nbsp;
+        <input ref={c => { this.text1 = c; console.log('@',c) }} type="text" placeholder="点击按钮提示数据" /> &nbsp;
         <button onClick={this.showData}>点我提示左侧数据</button> &nbsp;
         <button onClick={this.changeWeather}>点我切换天气</button> &nbsp;
       </div>
