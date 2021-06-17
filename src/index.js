@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MyComponent from './form/form';
+import MyComponent from './life/life';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <MyComponent />,
+  <MyComponent nn="aa"/>,
   document.getElementById('root')
 );
 

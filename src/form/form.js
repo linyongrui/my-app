@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 
 class MyComponent extends Component {
   login = (event) => {
@@ -7,20 +7,17 @@ class MyComponent extends Component {
     event.preventDefault()
   }
 
-  handleUsername = (event) => {
-    this.setState({username : event.target.value})
+  handleInput = (dataType,event) => {
+    this.setState({[dataType]:event.target.value})
   }
 
-  handlePassword = (event) => {
-    this.setState({password : event.target.value})
-  }
 
   render() {
     return (
       <div>
         <form onSubmit={this.login}>
-          <input onChange={this.handleUsername} type="text" placeholder="用户名" name="username" /> &nbsp;
-          <input onChange={this.handlePassword} type="password" placeholder="密码" name="password" /> &nbsp;
+          <input onChange={event => this.handleInput("username",event)} type="text" placeholder="用户名" name="username" /> &nbsp;
+          <input onChange={event => this.handleInput("password",event)} type="password" placeholder="密码" name="password" /> &nbsp;
           <button>登录</button> &nbsp;
         </form>
       </div>
