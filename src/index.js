@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MyComponent from './diff/diff';
+import MyComponent from './checkbox/checkbox';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <MyComponent nn="aa"/>,
+  <React.StrictMode>
+    <MyComponent nn="aa" />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
