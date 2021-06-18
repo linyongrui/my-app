@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MyComponent from './checkbox/checkbox';
+import MyComponent from './component/style/styleDemo';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
