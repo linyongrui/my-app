@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MyComponent from './component/style/styleDemo';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <MyComponent nn="aa" />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
