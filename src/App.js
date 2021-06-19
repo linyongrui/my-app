@@ -1,9 +1,9 @@
-import MyComponent from './component/style/styleDemo';
+import MyComponent from './component/toDoList/ToDoList';
 
 export default function App() {
   return (
     <div>
-      <MyComponent nn="aa" />
+      <MyComponent/>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+.list ul {
+    border: 2px solid rgb(143, 143, 143);
+    border-radius: 3px;
+    padding:0;
+    margin:10px 0px;
+}
+
+.list ul li {
+    /* border-bottom: 2px solid rgb(143, 143, 143); */
+    list-style-type:none;
+}
