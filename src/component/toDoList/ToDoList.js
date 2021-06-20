@@ -20,12 +20,64 @@ export default class ToDoList extends Component {
         )
     }
 
+    updateTodo = (id, done) => {
+        const { todos } = this.state
+        const newTodos = todos.map(
+            todo => {
+                if (id === todo.id) {
+                    todo.done = done
+                }
+                return todo
+            }
+        )
+        this.setState(
+            { todos: newTodos }
+        )
+    }
+
+    deleteTodo = (id) => {
+        const { todos } = this.state
+        const newTodos = todos.filter(
+            todo => {
+                return id !== todo.id
+            }
+        )
+        this.setState(
+            { todos: newTodos }
+        )
+    }
+
+    checkAll = (done) => {
+        const { todos } = this.state
+        const newTodos = todos.map(
+            todo => {
+                todo.done = done
+                return todo
+            }
+        )
+        this.setState(
+            { todos: newTodos }
+        )
+    }
+
+    clearAll = () => {
+        const { todos } = this.state
+        const newTodos = todos.filter(
+            todo => {
+                return !todo.done
+            }
+        )
+        this.setState(
+            { todos: newTodos }
+        )
+    }
+
     render() {
         return (
             <div className='app'>
                 <Header addTodo={this.addTodo}></Header>
-                <List todos={this.state.todos}></List>
-                <Footer></Footer>
+                <List todos={this.state.todos} updateTodo={this.updateTodo} deleteTodo={this.deleteTodo}></List>
+                <Footer todos={this.state.todos} checkAll={this.checkAll}  clearAll={this.clearAll} ></Footer>
             </div>
         )
     }

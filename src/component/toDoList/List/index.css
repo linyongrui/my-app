@@ -1,11 +1,16 @@
-.list ul {
-    border: 2px solid rgb(143, 143, 143);
-    border-radius: 3px;
-    padding:0;
-    margin:10px 0px;
+.list {
+    margin-left: 0px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0px;
 }
 
-.list ul li {
-    /* border-bottom: 2px solid rgb(143, 143, 143); */
-    list-style-type:none;
-}
+/* 
+.list-empty {
+    height: 40px;
+    line-height: 40px;
+    border: 0px solid #ddd;
+    border-radius: 2px;
+    padding-left: 5px;
+    margin-top: 10px;
+} */
