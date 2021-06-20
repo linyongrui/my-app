@@ -9,11 +9,15 @@ export default class user extends Component {
         users:[]
     }
 
+    updateUsers = (newState) =>{
+        this.setState(newState)
+    }
+
     render() {
         return (
 			<div className="container">
-                <Search user={this.state.users}></Search>
-                <List user={this.state.users}></List>
+                <Search updateUsers={this.updateUsers}></Search>
+                <List users={this.state.users}></List>
             </div>
         )
     }

@@ -8,7 +8,9 @@ export default class index extends Component {
 	handleSearch = ()=>{
 		const {keyWordElement:{value:keyWord}} = this
 		axios.get(`/api3/search/users?q=${keyWord}`).then(
-      response => { console.log('成功了', response.data); },
+      response => { 
+        this.props.updateUsers({isLoading:false,users:response.data.items})
+       },
       error => { console.log('失败了', error); }
 		)
 	}
