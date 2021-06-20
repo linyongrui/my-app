@@ -1,4 +1,4 @@
-import MyComponent from './component/proxy/proxy';
+import MyComponent from './component/user/user';
 
 export default function App() {
   return (
