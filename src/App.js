@@ -1,4 +1,4 @@
-import MyComponent from './component/user-pubsub/user';
+import MyComponent from './component/router3/router';
 
 export default function App() {
   return (
