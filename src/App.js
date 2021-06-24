@@ -1,4 +1,4 @@
-import MyComponent from './component/router9/router';
+import MyComponent from './component/antd/antd';
 
 export default function App() {
   return (
