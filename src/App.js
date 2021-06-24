@@ -1,4 +1,4 @@
-import MyComponent from './component/router8/router';
+import MyComponent from './component/router9/router';
 
 export default function App() {
   return (
