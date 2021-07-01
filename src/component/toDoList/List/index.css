@@ -1,0 +1,16 @@
+.list {
+    margin-left: 0px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0px;
+}
+
+/* 
+.list-empty {
+    height: 40px;
+    line-height: 40px;
+    border: 0px solid #ddd;
+    border-radius: 2px;
+    padding-left: 5px;
+    margin-top: 10px;
+} */
